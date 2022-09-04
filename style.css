@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+	text-align: center;
+	font-family: "Space Grotesk", sans-serif;
+}
+/* HEADER SECTION */
+.header-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.hello-section {
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#title {
+	font-size: 3rem;
+	margin: 0 auto 1rem auto;
+	width: 12rem;
+	background: rgba(17, 58, 98, 0.6);
+	padding: 10px;
+	border-radius: 20px;
+	color: white;
+	text-shadow: 0px 0px 1px black;
+}
+.desc {
+	background: rgba(17, 58, 98, 0.7);
+	margin: 0 auto 0 auto;
+	font-weight: 300;
+	width: 30em;
+	padding: 10px;
+	border-radius: 20px;
+	color: white;
+	text-shadow: 0px 0px 1px black;
+}
+.header-section img {
+	width: 50%;
+	height: 50vh;
+	margin: 0 auto;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-left: 3px solid black;
+	border-top: 3px solid black;
+	border-right: 3px solid black;
+	object-fit: contain;
+}
+/* ATTRACTION SECTION */
+.attraction-section {
+	color: black;
+	width: 50%;
+	margin: 0 auto;
+	background-color: rgb(195, 226, 241);
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+	text-shadow: 0px 0px 1px white;
+	padding-top: 30px;
+}
+
+.attr-info {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	padding-top: 30px;
+	align-items: start;
+}
+
+.attraction-section h1 {
+	text-shadow: 0px 0px 2px white;
+}
+
+.info {
+	width: 50%;
+	margin: 1em;
+	position: relative;
+}
+
+.info h3 {
+	margin: 15px auto;
+}
+
+.info p {
+	margin: 50px auto;
+}
+
+.attr-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 3px solid black;
+}
+/* GUIDE SECTION */
+.guide-section {
+	margin: 0 auto;
+	width: 50%;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-left: 3px solid black;
+	border-bottom: 3px solid black;
+	border-right: 3px solid black;
+	padding: 50px 100px;
+}
+.personal-info {
+	height: 250px;
+	width: 100%;
+	background: rgb(17, 58, 98);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 20px;
+	padding: 15px;
+	border-bottom: 10px solid rgb(195, 226, 241);
+}
+
+.guide-info p {
+	margin: 20px 5px;
+}
+
+#my-img {
+	height: 200px;
+	width: 150px;
+	border-radius: 20px;
+	margin-right: 15px;
+}
+
+@media (max-width: 1200px) {
+	.attr-info {
+		flex-flow: wrap;
+		justify-content: center;
+	}
+	.desc {
+		width: 100%;
+	}
+	#my-img {
+		width: 50%;
+		height: 70%s;
+	}
+	.guide-info p {
+		margin: 0;
+	}
+}
