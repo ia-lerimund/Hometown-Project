@@ -113,7 +113,7 @@ html {
 .personal-info {
 	height: 250px;
 	width: 100%;
-	background: rgb(17, 58, 98);
+	background: rgba(17, 58, 98, 0.8);
 	color: white;
 	display: flex;
 	align-items: center;
